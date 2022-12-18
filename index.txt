@@ -1,0 +1,26 @@
+grid-column-start 
+grid-column-end 
+for chidren item make layout complex.
+
+
+or 
+
+grid-row :1/3;
+
+grid-row :1/-1;
+
+
+
+
+grid-area :row-start / column-start /row-end/column-end;
+grid-area: 1/1/2/3;
+
+
+
+
+grid-template-area: "                             "
+                    "                              "
+                    "                               "
+                    "                                "
+                    "
+                    
