@@ -43,7 +43,7 @@ function Gallery() {
 
   return (
     <>
-      <div className="bg-[#000000] pt-4">
+      <div className="pt-4">
         <h2 className="text-center font-semibold  text-2xl">Gallery</h2>
         <div className="flex  gap-4 overflow-auto py-4">
           {images.map((item) =>( <div ><GalleryCard item={item}/></div> ))}

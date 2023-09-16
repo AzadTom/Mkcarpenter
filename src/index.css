@@ -24,5 +24,48 @@
         background: linear-gradient(180deg, transparent, rgba(8, 8, 8, 0.61), #000000);
     }
 
+
+
+ 
+   
+   
+
+
+   .dynamic li span:before
+   {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border-left: 2px solid red;
+    animation: animate 4s steps(12) infinite;
+
+   }   
+   
+   .dynamic li span{
+    position: relative;
+    overflow: hidden;
+
+   }
+
+
+   @keyframes animate {
+
+      40%,60%{
+
+        left: 100%;
+
+      }
+
+      100%{
+
+        left: 0%;
+
+      }
     
+   }
 }

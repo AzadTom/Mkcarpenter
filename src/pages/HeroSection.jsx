@@ -2,6 +2,8 @@ import React from 'react'
 import Carousel from '../components/Carousel'
 import Footer from '../components/Footer'
 import Gallery from '../components/Gallery'
+import Aboutme from '../components/Aboutme'
+import HeadingAnim from '../components/HeadingAnim'
 
 
 function HeroSection() {
@@ -14,7 +16,11 @@ function HeroSection() {
   return (
     <>
     <Carousel images={images}/>
-    <Gallery/>
+    <HeadingAnim/>
+    <Aboutme  reverse="flex-row-reverse" />
+   <Gallery/>
+    <Aboutme reverse="flex-row" />
+    <HeadingAnim/>
     <Footer/>
     </>
   )

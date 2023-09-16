@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import TypeAnimation from "./TypeAnimation";
 import Header from '../components/Header'
 
 function Carousel({ images }) {
@@ -16,17 +17,18 @@ function Carousel({ images }) {
   }, [images.length]);
 
   return (
-    <section className="flex flex-col  h-screen  items-center justify-center relative  sm:flex-row ">
+    <section className="flex flex-col  h-screen  items-center justify-center relative  sm:flex-row  ">
       <header className="absolute top-0 left-0 z-50">
-        <Header/>
+        <Header/> 
       </header>
+
       <div   className="flex-1 px-6 flex flex-col gap-2 justify-center  sm:items-start relative"  >
       <img
           src={` ${images[currentIndex]}`}
           alt="hero-img"
           className="sm:hidden w-full h-screen  object-cover bg-center bg-cover absolute  top-0 bottom-0 left-0 right-0"
         />
-        <h1 className="text-2xl sm:text-3xl font-semibold z-50">Mr.Mahesh Sharma</h1>
+        <TypeAnimation/>
         <p className="font-extralight  text-[16px]  z-50">
            Hello Mahesh Sharma from Gurgaon, Haryana, I have over a decade of
           experience specializing in various woodworking projects, and I'm
